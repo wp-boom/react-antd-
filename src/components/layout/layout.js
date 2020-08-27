@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Link } from 'react-router-dom'
 import MenuItem from 'antd/lib/menu/MenuItem'
 import CustomMenu from '../Menu'
 import ContentMain from '../ContentMain'
+import ContomHeader from './header'
 import '../../style/layout.less'
 
 const { Header, Content, Sider } = Layout
@@ -27,7 +28,8 @@ export default class gloabalLayout extends Component {
         <BrowserRouter>
           <Layout>
             <Header>
-              <div className="logo" />
+              <ContomHeader />
+              {/* <div className="logo" /> */}
               {/* <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
                 <Menu.Item key="1">nav 1</Menu.Item>
                 <Menu.Item key="2">nav 2</Menu.Item>
