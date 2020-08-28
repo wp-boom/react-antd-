@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import {
-  Menu, Button, Modal, message, Icon, Row, Col,
-} from 'antd'
+import { Row, Col } from 'antd'
 import '../../style/header.less'
 
 export default class Header extends Component {
@@ -24,10 +22,10 @@ export default class Header extends Component {
               <div className="right">
                 <ul>
                   <li>
-                    <a onClick={() => this.getUserInfo()}>管理员</a>
+                    <a>管理员</a>
                   </li>
                   <li>
-                    <a onClick={this.handleLogout}>退出</a>
+                    <a>退出</a>
                   </li>
                 </ul>
               </div>

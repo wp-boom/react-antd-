@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import { Layout, Menu, Breadcrumb } from 'antd'
-import { UserOutlined, LaptopOutlined, NotificationOutlined } from '@ant-design/icons'
-import { BrowserRouter, Route, Link } from 'react-router-dom'
-import MenuItem from 'antd/lib/menu/MenuItem'
+import { Layout } from 'antd'
+import { BrowserRouter } from 'react-router-dom'
 import CustomMenu from '../Menu'
 import ContentMain from '../ContentMain'
 import ContomHeader from './header'
@@ -14,7 +12,6 @@ export default class gloabalLayout extends Component {
   constructor() {
     super()
     this.state = {
-      name: '首页',
     }
   }
 
@@ -29,16 +26,10 @@ export default class gloabalLayout extends Component {
           <Layout>
             <Header>
               <ContomHeader />
-              {/* <div className="logo" /> */}
-              {/* <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
-                <Menu.Item key="1">nav 1</Menu.Item>
-                <Menu.Item key="2">nav 2</Menu.Item>
-                <Menu.Item key="3">nav 3</Menu.Item>
-              </Menu> */}
             </Header>
-            {/* 导航栏 */}
             <Layout>
-              <Sider width={200} className="site-layout-background">
+              {/* 导航栏 */}
+              <Sider width={142} className="site-layout-background">
                 <CustomMenu />
               </Sider>
               <Layout style={{ padding: '24px 24px' }}>
@@ -48,7 +39,7 @@ export default class gloabalLayout extends Component {
                     padding: 24,
                     margin: 0,
                     minHeight: 280,
-                    border: '1px solid #333',
+                    border: '1px solid #dfe4ea',
                   }}
                 >
                   <ContentMain />
