@@ -11,9 +11,8 @@ export default class CustomMenu extends Component {
       <Menu
         onClick={this.handleClickMenu}
         mode="inline"
-        defaultSelectedKeys={['1']}
-        defaultOpenKeys={['sub1']}
-        style={{ height: '100%', borderRight: 0 }}
+        defaultSelectedKeys={['hotel']}
+        style={{ height: '100%', borderRight: 0, background: '#42485B', color: '#fff' }}
       >
         <Menu.Item key="hotel">酒店管理</Menu.Item>
         <Menu.Item key="order">订单管理</Menu.Item>
